@@ -17,9 +17,9 @@ void ColorizeText(string msg, ConsoleColor color)
     Console.Write(msg);
     Console.ResetColor();
 }
-string  GetRowOfNumbers  (int value)   
+string GetRowOfNumbers(int value)
 {
-    if (value == 1)    
+    if (value == 1)
         return value + "\"";
     return value + ", " + GetRowOfNumbers(value - 1);
 }
