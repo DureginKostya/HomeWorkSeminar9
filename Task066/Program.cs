@@ -17,9 +17,9 @@ void ColorizeText(string msg, ConsoleColor color)
     Console.Write(msg);
     Console.ResetColor();
 }
-int  GetSumFromMToN (int initialValue, int finalValue )
+int GetSumFromMToN(int initialValue, int finalValue)
 {
-    if (initialValue == finalValue)    
+    if (initialValue == finalValue)
         return initialValue;
     return initialValue += GetSumFromMToN(initialValue + 1, finalValue);
 }
